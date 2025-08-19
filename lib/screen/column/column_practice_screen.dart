@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class ColumnScreen extends StatelessWidget {
-  const ColumnScreen({super.key});
+class ColumnPracticeScreen extends StatelessWidget {
+  const ColumnPracticeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Column'),),
+      appBar: AppBar(title: Text('Container 실습')),
       body: Container(
         width: 300,
-        color: Colors.grey,
+        color: Colors.purple,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          //mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Container(
               width: 100, height: 100,
@@ -31,7 +31,7 @@ class ColumnScreen extends StatelessWidget {
             ),
           ],
         ),
-      ),
+      )
     );
   }
 }
