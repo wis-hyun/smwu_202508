@@ -3,8 +3,14 @@ import 'package:smwu_202508/screen/column/column_practice_screen.dart';
 import 'package:smwu_202508/screen/column/column_screen.dart';
 import 'package:smwu_202508/screen/container/container_practice_screen.dart';
 import 'package:smwu_202508/screen/container/container_screen.dart';
+import 'package:smwu_202508/screen/image_screen/image_practice_screen.dart';
+import 'package:smwu_202508/screen/image_screen/image_screen.dart';
+import 'package:smwu_202508/screen/row/column_row_practice+screen.dart';
 import 'package:smwu_202508/screen/row/row_practice_screen.dart';
 import 'package:smwu_202508/screen/row/row_screen.dart';
+import 'package:smwu_202508/screen/stack_screen/stack_screen.dart';
+import 'package:smwu_202508/screen/text/text_practice_screen.dart';
+import 'package:smwu_202508/screen/text/text_screen.dart';
 
 class ButtonScreen extends StatelessWidget {
   const ButtonScreen({super.key});
@@ -44,7 +50,6 @@ class ButtonScreen extends StatelessWidget {
               },
               child: Text("button2"),
             ),
-
 
             SizedBox(height: 10),
 
@@ -101,6 +106,88 @@ class ButtonScreen extends StatelessWidget {
                 );
               },
               child: Text("RowPracticeScreen"),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ColumnRowPractice_screen();
+                    },
+                  ),
+                );
+              },
+              child: Text("ColumnRowPractice_screen"),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return TextScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("TextScreen"),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return TextPracticeScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("TextPracticeScreen"),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ImageScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("ImageScreen"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ImagePracticeScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("ImagePracticeScreen"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return StackScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("Stack Screen"),
             ),
           ],
         ),

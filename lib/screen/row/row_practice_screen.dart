@@ -15,12 +15,12 @@ class RowPracticeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: [
-            Container(width:100, height:100, color: Colors.blue),
-            Container(width:100, height:100, color: Colors.red),
-            Container(width:100, height:100, color: Colors.green),
-          ]
-        )
-      )
+            Container(width: 100, height: 100, color: Colors.blue),
+            Container(width: 100, height: 100, color: Colors.red),
+            Container(width: 100, height: 100, color: Colors.green),
+          ],
+        ),
+      ),
     );
   }
 }
