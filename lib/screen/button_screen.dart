@@ -8,6 +8,8 @@ import 'package:smwu_202508/screen/image_screen/image_screen.dart';
 import 'package:smwu_202508/screen/row/column_row_practice+screen.dart';
 import 'package:smwu_202508/screen/row/row_practice_screen.dart';
 import 'package:smwu_202508/screen/row/row_screen.dart';
+import 'package:smwu_202508/screen/scroll_view/scroll_view_screen.dart';
+import 'package:smwu_202508/screen/stack_screen/stack_practice_screen.dart';
 import 'package:smwu_202508/screen/stack_screen/stack_screen.dart';
 import 'package:smwu_202508/screen/text/text_practice_screen.dart';
 import 'package:smwu_202508/screen/text/text_screen.dart';
@@ -188,6 +190,32 @@ class ButtonScreen extends StatelessWidget {
                 );
               },
               child: Text("Stack Screen"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return StackPracticeScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("Stack Practice Screen"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ScrollViewScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("Scroll View Screen"),
             ),
           ],
         ),
