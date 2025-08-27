@@ -3,10 +3,12 @@ import 'package:smwu_202508/screen/column/column_practice_screen.dart';
 import 'package:smwu_202508/screen/column/column_screen.dart';
 import 'package:smwu_202508/screen/container/container_practice_screen.dart';
 import 'package:smwu_202508/screen/container/container_screen.dart';
+import 'package:smwu_202508/screen/future/future_screen.dart';
 import 'package:smwu_202508/screen/image_screen/image_practice_screen.dart';
 import 'package:smwu_202508/screen/image_screen/image_screen.dart';
 import 'package:smwu_202508/screen/navigator/navigator_screen.dart';
 import 'package:smwu_202508/screen/network/network_screen.dart';
+import 'package:smwu_202508/screen/news/news_screen.dart';
 import 'package:smwu_202508/screen/row/column_row_practice+screen.dart';
 import 'package:smwu_202508/screen/row/row_practice_screen.dart';
 import 'package:smwu_202508/screen/row/row_screen.dart';
@@ -61,6 +63,10 @@ class ButtonScreen extends StatelessWidget {
             button(context, TodoScreen(), "Todo screen"),
             const SizedBox(height: 10),
             button(context, NetworkScreen(), "Network screen"),
+            const SizedBox(height: 10),
+            button(context, FutureScreen(), "Future screen"),
+            const SizedBox(height: 10),
+            button(context, NewsScreen(), "News screen"),
           ],
         ),
       ),
