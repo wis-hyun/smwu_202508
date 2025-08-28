@@ -4,6 +4,7 @@ import 'package:smwu_202508/screen/column/column_screen.dart';
 import 'package:smwu_202508/screen/container/container_practice_screen.dart';
 import 'package:smwu_202508/screen/container/container_screen.dart';
 import 'package:smwu_202508/screen/future/future_screen.dart';
+import 'package:smwu_202508/screen/getx/getx_screen.dart';
 import 'package:smwu_202508/screen/image_screen/image_practice_screen.dart';
 import 'package:smwu_202508/screen/image_screen/image_screen.dart';
 import 'package:smwu_202508/screen/navigator/navigator_screen.dart';
@@ -67,6 +68,8 @@ class ButtonScreen extends StatelessWidget {
             button(context, FutureScreen(), "Future screen"),
             const SizedBox(height: 10),
             button(context, NewsScreen(), "News screen"),
+            const SizedBox(height: 10),
+            button(context, GetxScreen(), "Getx screen"),
           ],
         ),
       ),
